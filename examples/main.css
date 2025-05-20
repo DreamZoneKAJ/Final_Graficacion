@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#info,
+#animationInfo,
+#loading,
+#controlsHelp,
+#footer {
+  position: absolute;
+  z-index: 100;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 200, 255, 0.7);
+}
+
+#info {
+  top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#animationInfo {
+  top: 40px;
+  left: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #0ff;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+#loading {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+#controlsHelp {
+  right: 10px;
+  bottom: 40px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #0ff;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#footer {
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  font-family: Arial;
+}
+
+canvas {
+  cursor: grab;
+}
